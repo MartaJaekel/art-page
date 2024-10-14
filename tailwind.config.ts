@@ -13,6 +13,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+
+    fontFamily: {
+      serif: ['var(--font-marcellus)'],
+    },
   },
   plugins: [],
 };
