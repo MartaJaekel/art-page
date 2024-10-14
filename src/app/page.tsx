@@ -31,40 +31,40 @@ export default function Home() {
     <div className="font-serif">
       <main className="container mx-auto p-4 font-serif">
         <div>
-          <div className="flex flex-row justify-center h-[10vh] relative z-10">
-            <div className="absolute left-0 top-8">
-              <button
-                className="sm:hidden"
-                onClick={() => setMenuOpen(!menuOpen)}
-              >
-                <img src="/svg/menu.svg" alt="Menu" />
-              </button>
-            <ul className="hidden sm:flex flex-row lg:gap-8">
-                <li className="hover:underline">Shop</li>
-                <li className="hover:underline">Über mich</li>
-                <li className="hover:underline">Kontakt</li>
-              </ul>
-            </div>
+        <div className="flex flex-row justify-center h-[10vh] relative z-10">
+    <div className="absolute left-0 top-8">
+      <button
+        className="sm:hidden md:flex lg:hidden"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <img src="/svg/menu.svg" alt="Menu" />
+      </button>
+      <ul className="hidden sm:flex flex-row md:hidden lg:flex lg:gap-8">
+        <li className="hover:underline">Shop</li>
+        <li className="hover:underline">Über mich</li>
+        <li className="hover:underline">Kontakt</li>
+      </ul>
+    </div>
 
-            <div className="flex content-center items-center">
-              <h1 className="text-4xl">Essence</h1>
-            </div>
-            <div className="flex flex-row gap-5 absolute right-0 top-[36px]">
-              <img src="/svg/instagram.svg" width={25} height={25}></img>
-              <img src="/svg/shopping.svg" width={25} height={25}></img>
-            </div>
-          </div>
+    <div className="flex content-center items-center">
+      <h1 className="text-4xl">Essence</h1>
+    </div>
+    <div className="flex flex-row gap-5 absolute right-0 top-[36px]">
+      <img src="/svg/instagram.svg" width={25} height={25} alt="Instagram" />
+      <img src="/svg/shopping.svg" width={25} height={25} alt="Shopping" />
+    </div>
+  </div>
 
-          {/* Conditional rendering for the menu (appears below the navigation) */}
-          {menuOpen && (
-            <div className="absolute top-[10vh] left-0 right-0 bg-white z-40 flex flex-col items-center p-8 shadow-lg sm:hidden">
-              <ul className="flex flex-col gap-6 text-3xl">
-                <li className="hover:underline cursor-pointer">Shop</li>
-                <li className="hover:underline cursor-pointer">Über mich</li>
-                <li className="hover:underline cursor-pointer">Kontakt</li>
-              </ul>
-            </div>
-          )}
+  {/* Conditional rendering for the menu (appears below the navigation) */}
+  {menuOpen && (
+    <div className="absolute top-[10vh] left-0 right-0 bg-white z-40 flex flex-col items-center p-8 shadow-lg sm:hidden md:flex lg:hidden">
+      <ul className="flex flex-col gap-6 text-2xl">
+        <li className="hover:underline cursor-pointer">Shop</li>
+        <li className="hover:underline cursor-pointer">Über mich</li>
+        <li className="hover:underline cursor-pointer">Kontakt</li>
+      </ul>
+    </div>
+  )}
 
           <div
             style={{
