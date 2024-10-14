@@ -147,9 +147,7 @@ export default function Home() {
                   width={20}
                 ></img>
               </button>
-
-              {/* Image container with responsive width and scroll */}
-              <div
+               <div
                 ref={scrollContainerRef}
                 className="flex flex-row overflow-x-hidden whitespace-nowrap w-[100%]"
               >
@@ -295,7 +293,7 @@ export default function Home() {
       </main>
       <div
         style={{
-          background: "url('/watercolor.avif')  no-repeat center center",
+          background: "url('/bc.jpg')  no-repeat center center",
           backgroundSize: "cover",
           backgroundPosition: "center",
           width: "100%",
