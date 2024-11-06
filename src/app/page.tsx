@@ -9,7 +9,6 @@ export default function Home() {
 
   const handleScroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
-      // get the calculated width of the main element
       const mainElement = document.getElementsByTagName("main")[0];
       const mainElementComputedStyle = getComputedStyle(mainElement);
       let mainElementWidth = mainElement.clientWidth;
@@ -192,7 +191,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/z.jpg"
+                    src="/wallstone.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -231,7 +230,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/k.jpg"
+                    src="/rb.png"
                     width={300}
                     height={300}
                     alt="painting"
