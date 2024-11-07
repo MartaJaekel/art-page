@@ -54,8 +54,7 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Conditional rendering for the menu (appears below the navigation) */}
-  {menuOpen && (
+   {menuOpen && (
     <div className="absolute top-[10vh] left-0 right-0 bg-white z-40 flex flex-col items-center p-8 shadow-lg sm:hidden md:flex lg:hidden">
       <ul className="flex flex-col gap-6 text-2xl">
         <li className="hover:underline cursor-pointer">Shop</li>
@@ -123,7 +122,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="flex items-center justify-center m-24">
+            <div className="flex items-center justify-center my-24">
               <h2 className="text-4xl">Beliebte Drucke</h2>
             </div>
             <section className="relative  flex justify-center">
@@ -306,7 +305,6 @@ export default function Home() {
           Erfahre als erster von unseren neuen Drucken, Sonderangeboten und
           anderen News
         </p>
-        {/* Content inside the div */}
         <div className="flex flex-col justify-center gap-6 items-center m-3">
           <input type="email" placeholder="E-Mail" className=" p-4" />
           <button className="bg-slate-500 text-cyan-50 py-3 px-4">
