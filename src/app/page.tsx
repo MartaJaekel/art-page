@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { useRef} from "react";
+import { useRef } from "react";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,39 +30,49 @@ export default function Home() {
     <div className="font-serif">
       <main className="container mx-auto p-4 font-serif">
         <div>
-        <div className="flex flex-row justify-center h-[10vh] relative z-10">
-    <div className="absolute left-0 top-8">
-      <button
-        className="sm:hidden md:flex lg:hidden"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        <img src="/svg/menu.svg" alt="Menu" />
-      </button>
-      <ul className="hidden sm:flex flex-row md:hidden lg:flex lg:gap-8">
-        <li className="hover:underline">Shop</li>
-        <li className="hover:underline">Über mich</li>
-        <li className="hover:underline">Kontakt</li>
-      </ul>
-    </div>
+          <div className="flex flex-row justify-center h-[10vh] relative z-10">
+            <div className="absolute left-0 top-8">
+              <button
+                className="sm:hidden md:flex lg:hidden"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
+                <img src="/svg/menu.svg" alt="Menu" />
+              </button>
+              <ul className="hidden lg:flex flex-row gap-8">
+                <li className="hover:underline">Shop</li>
+                <li className="hover:underline">Über mich</li>
+                <li className="hover:underline">Kontakt</li>
+              </ul>
+            </div>
 
-    <div className="flex content-center items-center">
-      <h1 className="text-4xl">Essence</h1>
-    </div>
-    <div className="flex flex-row gap-5 absolute right-0 top-[36px]">
-      <img src="/svg/instagram.svg" width={25} height={25} alt="Instagram" />
-      <img src="/svg/shopping.svg" width={25} height={25} alt="Shopping" />
-    </div>
-  </div>
+            <div className="flex content-center items-center">
+              <h1 className="text-5xl">Essence</h1>
+            </div>
+            <div className="flex flex-row gap-5 absolute right-0 top-[36px]">
+              <img
+                src="/svg/instagram.svg"
+                width={25}
+                height={25}
+                alt="Instagram"
+              />
+              <img
+                src="/svg/shopping.svg"
+                width={25}
+                height={25}
+                alt="Shopping"
+              />
+            </div>
+          </div>
 
-   {menuOpen && (
-    <div className="absolute top-[10vh] left-0 right-0 bg-white z-40 flex flex-col items-center p-8 shadow-lg sm:hidden md:flex lg:hidden">
-      <ul className="flex flex-col gap-6 text-2xl">
-        <li className="hover:underline cursor-pointer">Shop</li>
-        <li className="hover:underline cursor-pointer">Über mich</li>
-        <li className="hover:underline cursor-pointer">Kontakt</li>
-      </ul>
-    </div>
-  )}
+          {menuOpen && (
+            <div className="absolute top-[10vh] left-0 right-0 bg-white z-40 flex flex-col items-center p-8 shadow-lg sm:block md:flex lg:hidden">
+              <ul className="flex flex-col gap-6 text-2xl">
+                <li className="hover:underline cursor-pointer">Shop</li>
+                <li className="hover:underline cursor-pointer">Über mich</li>
+                <li className="hover:underline cursor-pointer">Kontakt</li>
+              </ul>
+            </div>
+          )}
 
           <div
             style={{
@@ -70,13 +80,10 @@ export default function Home() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               width: "100%",
-              
             }}
-             className="h-[516px] lg:h-[700px]"
-          >
-         
-          </div>
-        
+            className="h-[516px] lg:h-[700px]"
+          ></div>
+
           <section className="flex flex-col items-center py-20 m-12">
             <h2 className="text-4xl text-center lg:text-6xl">
               Aquarelle, die besondere <br /> Momente einfangen
@@ -85,17 +92,17 @@ export default function Home() {
               ALLE DRUCKE SHOPPEN
             </button>
           </section>
-          <div className="flex flex-col gap-4 justify-center md:flex-row">
-            <div className="relative">
+          <div className="flex flex-col gap-4 justify-center md:flex-col lg:flex-row lg:flex-wrap">
+            <div className="relative flex-shrink-0">
               <Image
-                src="/sand.avif"
+                src="/landscape.jpg"
                 width={600}
                 height={600}
                 alt="painting"
                 className="sm:-[300px]  md:h-[500px]  lg:h-[600px] w-[100%]"
               />
-              <div className="absolute  top-8 left-10">
-                <span className="text-black text-3xl">Sand-Serie</span>
+              <div className="absolute top-8 left-10">
+                <span className="text-black text-3xl">Landschaft-Serie</span>
               </div>
               <div className="absolute  bottom-3 left-10">
                 <span className="text-black text-2xl">
@@ -103,16 +110,16 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative flex-shrink-0">
               <Image
-                src="/wasser.jpg"
+                src="/blatt.jpg"
                 width={600}
                 height={600}
                 alt="painting"
                 className="sm:-[300px]  md:h-[500px]  lg:h-[600px] w-[100%]"
               />
               <div className="absolute top-8 left-10">
-                <span className="text-black text-3xl">Wasser-Serie</span>
+                <span className="text-black text-3xl">Blatt-Serie</span>
               </div>
               <div className="absolute  bottom-3 left-10">
                 <span className="text-black text-2xl">
@@ -145,13 +152,13 @@ export default function Home() {
                   width={20}
                 ></img>
               </button>
-               <div
+              <div
                 ref={scrollContainerRef}
                 className="flex flex-row overflow-x-hidden whitespace-nowrap w-[100%]"
               >
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/blue.avif"
+                    src="/face.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -164,7 +171,7 @@ export default function Home() {
 
                 <div className="p-2  relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/i.png"
+                    src="/birth.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -177,7 +184,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/s.avif"
+                    src="/fullmoon.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -190,7 +197,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/wallstone.jpg"
+                    src="/blood.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -203,7 +210,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/d.png"
+                    src="/peach.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -216,7 +223,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/b.avif"
+                    src="/elements.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -229,7 +236,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/rb.png"
+                    src="/stones.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -242,7 +249,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/e.jpg"
+                    src="/office.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -258,7 +265,7 @@ export default function Home() {
           <section className="bg-red-200 flex flex-col md:flex-row justify-center gap-12 ">
             <div className="flex flex-row m-10">
               <Image
-                src="/red.jpg"
+                src="/blumen.jpg"
                 width={300}
                 height={300}
                 alt="painting"
