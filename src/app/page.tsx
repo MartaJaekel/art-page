@@ -76,7 +76,7 @@ export default function Home() {
 
           <div
             style={{
-              background: "url('/flecken.jpg')  no-repeat center center",
+              background: "url('/images/flecken.jpg')  no-repeat center center",
               backgroundSize: "cover",
               backgroundPosition: "center",
               width: "100%",
@@ -95,7 +95,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 justify-center md:flex-col lg:flex-row lg:flex-wrap">
             <div className="relative flex-shrink-0">
               <Image
-                src="/landscape.jpg"
+                src="/images/landscape.jpg"
                 width={600}
                 height={600}
                 alt="painting"
@@ -112,7 +112,7 @@ export default function Home() {
             </div>
             <div className="relative flex-shrink-0">
               <Image
-                src="/blatt.jpg"
+                src="/images/blatt.jpg"
                 width={600}
                 height={600}
                 alt="painting"
@@ -158,7 +158,7 @@ export default function Home() {
               >
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/face.jpg"
+                    src="/images/face.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -171,7 +171,7 @@ export default function Home() {
 
                 <div className="p-2  relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/birth.jpg"
+                    src="/images/birth.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -184,7 +184,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/fullmoon.jpg"
+                    src="/images/fullmoon.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -197,7 +197,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/blood.jpg"
+                    src="/images/blood.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -210,7 +210,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/peach.jpg"
+                    src="/images/peach.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -223,7 +223,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/elements.jpg"
+                    src="/images/elements.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -236,7 +236,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/stones.jpg"
+                    src="/images/stones.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -249,7 +249,7 @@ export default function Home() {
 
                 <div className="p-2 relative flex-shrink-0 w-[100%] sm:w-[100%] md:w-[50%] lg:w-[25%]">
                   <Image
-                    src="/office.jpg"
+                    src="/images/office.jpg"
                     width={300}
                     height={300}
                     alt="painting"
@@ -265,7 +265,7 @@ export default function Home() {
           <section className="bg-red-200 flex flex-col md:flex-row justify-center gap-12 ">
             <div className="flex flex-row m-10">
               <Image
-                src="/blumen.jpg"
+                src="/images/blumen.jpg"
                 width={300}
                 height={300}
                 alt="painting"
@@ -298,7 +298,7 @@ export default function Home() {
       </main>
       <div
         style={{
-          background: "url('/bc.jpg')  no-repeat center center",
+          background: "url('/images/bc.jpg')  no-repeat center center",
           backgroundSize: "cover",
           backgroundPosition: "center",
           width: "100%",
@@ -322,7 +322,7 @@ export default function Home() {
       <footer className="bg-white  p-4 h-[500px] flex flex-col justify-end">
         <div className="m-auto">
           <Image
-            src="/flower.png"
+            src="/images/flower.png"
             width={200}
             height={200}
             alt="flower"
